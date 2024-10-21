@@ -1,0 +1,20 @@
+<routes>
+    <vType id="Car" accel="5.0" decel="2.0" sigma="0.5" maxSpeed="30" length="5.0" color="255,0,0" vClass="passenger" minGap="0" tau="0.5"/>
+    <vType id="Car1" carFollowModel="IDM" minGap="0" tau="0.1" accel="2.5" decel="4.5" sigma="1.0" maxSpeed="20" length="5.0" color="255, 255, 255" vClass="passenger"/>
+    <vType id="Car2" carFollowModel="IDM" accel="2.5" decel="4.5" sigma="1.0" maxSpeed="30" length="5.0" color="255, 255, 255" vClass="passenger"/>
+    <vType id="Car3" carFollowModel="IDM" accel="2.5" decel="4.5" sigma="1.0" maxSpeed="30" length="5.0" color="255, 255, 255" vClass="passenger"/>
+    <vType id="Car4" carFollowModel="IDM" accel="2.5" decel="4.5" sigma="1.0" maxSpeed="30" length="5.0" color="255, 255, 255" vClass="passenger"/>
+    <vType id="Car5" carFollowModel="IDM" accel="2.5" decel="4.5" sigma="1.0" maxSpeed="30" length="5.0" color="255, 255, 255" vClass="passenger"/>
+
+    <route id="Straight" edges="Lane"/>
+
+    <vehicle id="Car" type="Car" route="Straight" depart="0" departDelay="0" departLane="1" departPos="180"  destination="Lane" arrivalLane="0" departSpeed="10"/>
+    <vehicle id="CarF" type="Car1" route="Straight" depart="0" departDelay="0" departLane="1" departPos="230" destination="Lane" arrivalLane="0" departSpeed="2"/>
+    <flow id="Flow1" type="Car5" route="Straight" begin="0" end="100" number="10" departSpeed="10" departLane="2" departPos="200"/>
+    <flow id="Flow2" type="Car3" route="Straight" begin="0" end="100" number="10" departSpeed="20" departLane="1" departPos="150"/>
+    <flow id="Flow3" type="Car2" route="Straight" begin="0" end="100" number="10" departSpeed="20" departLane="0" departPos="100"/>
+    <flow id="Flow4" type="Car2" route="Straight" begin="0" end="100" number="10" departSpeed="20" departLane="1" departPos="400"/>
+    <flow id="Flow5" type="Car4" route="Straight" begin="0" end="100" number="10" departSpeed="20" departLane="0" departPos="350"/>
+    <flow id="Flow6" type="Car5" route="Straight" begin="0" end="100" number="10" departSpeed="23" departLane="2" departPos="120"/>
+    <flow id="Flow8" type="Car4" route="Straight" begin="0" end="100" number="10" departSpeed="23" departLane="2" departPos="320"/>
+</routes>
